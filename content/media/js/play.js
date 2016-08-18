@@ -1,17 +1,19 @@
 function play(){
 	$(document).ready(function(){
-		$('.homeTextShawn').stop().animate({
-				left: 0 
-			}, 300);
-		$('.homeTextLower').stop().delay(300).animate({
-				right: 0
-			}, 300);
+		// Slide name in from left
+		$('.homeTextShawn').stop().animate({ left: 0 }, { duration: 200,
+				complete: setTimeout(get_low, 700)
+			    });
+		$('.homeTextLower').stop().delay(300).animate({ right: 0 }, 200);
 	});
 
-	$('.navNormal').mouseover(function(){
-			$(this).attr("class", "navHighlight");
-		}).mouseout(function(){
-			$(this).attr("class", "navNormal");
-		});
+	$('.navBox').hover(
+		function(){ $(this).attr("class", "navBoxHover"); },
+		function(){ $(this).attr("class", "navBox"); }
+	 );
 }
 
+function get_low(){
+	//$('.homeTextLower').css({'top': '50%'});
+	$('.homeTextLower').animate({ top: '50%' });
+}

@@ -16,6 +16,7 @@
     {% block css %}
     <link href="/media/css/slide.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet"> 
     {% endblock css %}
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     {% if resource.meta.created %}
@@ -43,16 +44,11 @@
         <div class="homeTextShawn">SHAWN</div>
         <div class="homeTextLower">LOWER</div>
       </div>
-      <div class="navContainer">
-      <table class="navTable">
-        <tr>
-           <td class="navNormal" id="navTL">NAVTL</td>
-           <td class="navNormal" id="navTR">NAVTR</td>
-        </tr>
-        <tr>
-           <td class="navNormal" id="navBL">NAVBL</td>
-           <td class="navNormal" id="navBR">NAVBR</td>
-        </tr>
+      <div class="navContainer" style="position:absolute">
+        <div class="navBox" id="navTL"></div>
+        <div class="navBox" id="navTR">Blog</div>
+        <div class="navBox" id="navBL">Contact</div>
+        <div class="navBox" id="navBR">Resume</div>
       </div>
       {% endblock container %}
   </div>
