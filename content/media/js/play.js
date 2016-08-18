@@ -1,3 +1,11 @@
+// some vars
+
+urls = {
+        'blog':      '/oldblog',
+        'contact':   'mailto:shawn@shawnlower.com',
+        'resume':    'https://www.linkedin.com/in/shawnlower'
+ };
+
 function play(){
 	$(document).ready(function(){
 		// Slide name in from left
@@ -14,13 +22,30 @@ function play(){
 	 );
 
 	$('#navTR').click(function(){
-			window.location.href='/oldblog';
+			window.location.href=urls['blog'];
 		});
 	$('#navBL').click(function(){
-			window.location.href='mailto:shawn@shawnlower.com';
+			window.location.href=urls['contact'];
 		});
 	$('#navBR').click(function(){
-			window.location.href='https://www.linkedin.com/in/shawnlower';
+			window.location.href=urls['resume'];
+		});
+
+	// Keyboard shortcuts :-)
+    // Blog
+	$(document).bind('keypress', 'b', function() {
+			$('#navTR').attr("class", "navBoxHover");
+			window.location.href=urls['blog'];
+		});
+    // Contact (sends e-mail)
+	$(document).bind('keypress', 'c', function() {
+			$('#navBL').attr("class", "navBoxHover");
+			window.location.href=urls['contact'];
+		});
+    // Resume
+	$(document).bind('keypress', 'r', function() {
+			$('#navBR').attr("class", "navBoxHover");
+			window.location.href=urls['resume'];
 		});
 }
 
