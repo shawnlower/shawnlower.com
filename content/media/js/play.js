@@ -1,7 +1,7 @@
 // some vars
 
 urls = {
-        'blog':      '/oldblog',
+        'blog':      '/blog',
         'contact':   'mailto:shawn@shawnlower.com',
         'resume':    'https://www.linkedin.com/in/shawnlower'
  };
