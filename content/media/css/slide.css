@@ -80,6 +80,7 @@
 .navBoxHover {
     font-family: 'Asap', sans-serif;
 	font-size: 5vw;
+	cursor: pointer;
 	color: white;
 	line-height: 35vw;
 	text-align: center;
