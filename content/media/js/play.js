@@ -3,7 +3,7 @@
 urls = {
         'blog':      '/blog',
         'contact':   'mailto:shawn@shawnlower.com',
-        'resume':    'https://www.linkedin.com/in/shawnlower'
+        'resume':    'http://www.shawnlower.com/media/resume.pdf'
  };
 
 function play(){
