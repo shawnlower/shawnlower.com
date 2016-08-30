@@ -24,6 +24,7 @@ meta:
     nodemeta: meta.yaml
     created: !!timestamp 2016-08-18 12:50:00
     author: Shawn Lower
+    charset: ISO-8859-1
 sorter:
     time:
         attr:
